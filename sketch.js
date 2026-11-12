@@ -76,7 +76,7 @@ function draw() {
   fill(255);
   textSize(16);
   textAlign(LEFT, TOP);
-  text("Score: " + score, 10, 10);
+  text("V3 Score: " + score, 10, 10);
 
   if (gameOver) {
     textAlign(CENTER, CENTER);
