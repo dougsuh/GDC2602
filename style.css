@@ -10,12 +10,16 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  min-height: 100dvh;
   overflow: hidden;
 }
 
 canvas {
   display: block;
-  width: min(600px, 100vw, 100vh);
+  width: min(600px, 100vw, 100dvh);
+  max-width: 100%;
+  max-height: 100vh;
+  max-height: 100dvh;
   height: auto;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   border-radius: 8px;
