@@ -3,13 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brick Break - p5.js</title>
+  <title>실시간 멀티플레이어 공 게임</title>
   <link rel="stylesheet" href="style.css">
-  <!-- p5.js CDN -->
+  <!-- p5.js 라이브러리 -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <!-- 서버 없이 기기 간 실시간 동기화를 지원하는 MQTT 웹소켓 라이브러리 -->
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
 </head>
 <body>
-  <!-- p5.js 스케치 실행 -->
+  <div id="game-wrapper">
+    <div id="status-bar">서버 연결 중...</div>
+    <div id="canvas-container"></div>
+    <div id="controls">
+      <button id="end-btn">끝내기</button>
+      <button id="reset-btn" style="display: none;">다시 시작</button>
+    </div>
+  </div>
+
   <script src="sketch.js"></script>
 </body>
 </html>
